@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coca-Cola | Code Veterans</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="favicon icon" href="./Icons/Favicon.png" type="image/x-icon" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div id="wrapper">
+      <div class="Loader-container"></div>
+      <video autoplay muted src="./Videos/Wrapper.mp4"></video>
+    </div>
+
+    <div id="cursor">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div> -->
+
+    <div>
+      <div class="para-container" id="para-cont1">
+        <img src="./Content Images/1.jpeg" />
+        <div class="paras">
+          <div class="prev-btn" id="prev-btn1"></div>
+          <h2>Jobs At Coca‑Cola.</h2>
+          <p>
+            We seek employees who embrace change and diversity. Your skills and
+            experience will help us navigate the global landscape and lead us
+            into the future.<br />
+            <br />
+            We value team players who are open to new ideas and ready to
+            innovate. At our company, we believe in working together to make a
+            difference. Join us to create a brighter future and grow with us as
+            we explore new opportunities. Your unique perspective and dedication
+            will be key in driving our success forward.
+          </p>
+          <button class="content-btn">Explore Jobs.</button>
+        </div>
+      </div>
+      <div class="para-container" id="para-cont2">
+        <img src="./Content Images/2.jpeg" />
+        <div class="paras">
+          <div class="prev-btn" id="prev-btn2"></div>
+          <h2>A Purpose Driven History.</h2>
+          <p>
+            The Coca-Cola Company’s mission is to refresh the world and make a
+            difference, a goal we've stayed committed to for 137 years. <br />
+            <br />
+            Our strategy focuses on people both our customers and our employees.
+            We aim to find sustainable solutions that strengthen our business
+            and help us tackle today's and tomorrow's challenges. At the same
+            time, we strive to create positive change for the planet. By working
+            together, we can ensure a better future for everyone.
+          </p>
+          <button class="content-btn">Learn More.</button>
+        </div>
+      </div>
+      <div class="para-container" id="para-cont3">
+        <img src="./Content Images/3.jpeg" />
+        <div class="paras">
+          <div class="prev-btn" id="prev-btn3"></div>
+          <h2>Limca Book of Records.</h2>
+          <p>
+            The Limca Book of Records (LBR) is an annual publication that
+            documents world records held by Indians. With over 30 editions since
+            1987. <br />
+            <br />
+            It is India's first and longest continuously published book of
+            records. The LBR catalogues unique milestones and landmarks
+            including, but not limited to, firsts, bests, mosts, inventions,
+            discoveries, and honours and awards received, by Indians at home or
+            abroad in all fields – both human and natural.
+          </p>
+          <button class="content-btn">View More.</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-container">
+      <svg>
+        <defs>
+          <filter id="gooeyness">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="2.2"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+              result="gooeyness"
+            />
+            <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="plate platee" onclick="this.classList.toggle('active')">
+        <svg
+          class="burger"
+          version="1.1"
+          height="100"
+          width="100"
+          viewBox="0 0 100 100"
+        >
+          <path class="line line1" d="M 50,35 H 30" />
+          <path class="line line2" d="M 50,35 H 70" />
+          <path class="line line3" d="M 50,50 H 30" />
+          <path class="line line4" d="M 50,50 H 70" />
+          <path class="line line5" d="M 50,65 H 30" />
+          <path class="line line6" d="M 50,65 H 70" />
+        </svg>
+        <svg
+          class="x"
+          version="1.1"
+          height="100"
+          width="100"
+          viewBox="0 0 100 100"
+        >
+          <path class="line" d="M 34,32 L 66,68" />
+          <path class="line" d="M 66,32 L 34,68" />
+        </svg>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <ul>
+        <li class="nav-items">
+          <a href="#" class="navlinks" id="logo"></a>
+          <div id="nav-container">
+            <div class="search-container">
+              <input checked="" class="checkbox" type="checkbox" />
+              <div class="mainbox">
+                <div class="iconContainer">
+                  <svg
+                    viewBox="0 0 512 512"
+                    height="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="search_icon"
+                  >
+                    <path
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                    ></path>
+                  </svg>
+                </div>
+                <input class="search_input" placeholder="search" type="text" />
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="menu-page">
+      <img id="sign" src="./Icons/menu Sign.svg" />
+      <div id="logo-n-close">
+        <img id="logo" src="./Icons/Menu Coca-Cola Black .png" />
+      </div>
+      <div id="menu-items">
+        <div class="menu-links"><h2 data-text="Home" id="home">Home</h2></div>
+        <div class="menu-links"><h2 data-text="Contact">Contact</h2></div>
+        <div class="menu-links"><h2 data-text="About">About</h2></div>
+        <div class="menu-links"><h2 data-text="Career">Career</h2></div>
+        <div class="menu-links"><h2 data-text="Company">Company</h2></div>
+      </div>
+    </div>
+
+    <main id="main">
+      <section class="pages" id="page1">
+        <video muted loop autoplay src="./Videos/Coke.mp4" id="video"></video>
+        <h1 id="scroll">Scroll For More</h1>
+        <div id="landing-page">
+          <h2 id="tagline">Taste The Feeling !</h2>
+        </div>
+      </section>
+
+      <section class="pages" id="extra-page">
+        <div id="extra-page-cont">
+          <div class="cont-extra">
+            <img id="can-img" src="./Icons/can.png" />
+          </div>
+          <div class="cont-extra">
+            <img id="splash-img" src="./Water Splash/Untitled-2.png" />
+          </div>
+          <h1>ZERO</h1>
+        </div>
+      </section>
+
+      <section class="pages" id="page2">
+        <div id="overlay"></div>
+        <div class="text">
+          <div id="textVision">
+            <h1 class="line1">"Together, we create unforgettable moments</h1>
+
+            <h1 class="line2">because everything is more enjoyable</h1>
+
+            <h1 class="line3">when shared. Together truly tastes better."</h1>
+          </div>
+          <div id="textVision-hover">
+            <h1 class="line1">"Together, we create unforgettable moments</h1>
+
+            <h1 class="line2">because everything is more enjoyable</h1>
+
+            <h1 class="line3">when shared. Together truly tastes better."</h1>
+          </div>
+        </div>
+        <div id="opening-box1">
+          <svg
+            width="100%"
+            height="100%"
+            id="svg"
+            viewBox="0 150 1440 390"
+            xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150"
+          >
+            <path
+              d="M 0,400 L 0,150 C 117.46666666666664,136.53333333333333 234.93333333333328,123.06666666666666 414,139 C 593.0666666666667,154.93333333333334 833.7333333333333,200.26666666666668 1015,207 C 1196.2666666666667,213.73333333333332 1318.1333333333332,181.86666666666667 1440,150 L 1440,400 L 0,400 Z"
+              stroke="none"
+              stroke-width="0"
+              fill="#0a0a0a"
+              fill-opacity="1"
+              class="transition-all duration-300 ease-in-out delay-150 path-0"
+              transform="rotate(-180 720 200)"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="pages" id="page3">
+        <div id="img-container">
+          <div class="img-box" id="fst-box">
+            <h2>Jobs.</h2>
+            <div class="images-and-paras" id="fst-cont">
+              <img id="fst-img" src="./Content Images/1 (1).png" />
+            </div>
+          </div>
+          <div class="img-box" id="mdl-box">
+            <h2>History.</h2>
+            <div class="images-and-paras" id="mdl-cont">
+              <img id="mdl-img" src="./Content Images/1 (2).png" />
+            </div>
+          </div>
+          <div class="img-box" id="lst-box">
+            <h2>Awards.</h2>
+            <div class="images-and-paras" id="lst-cont">
+              <img id="lst-img" src="./Content Images/3 (1).png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pages" id="page4">
+        <h2>Explore Our Brands.</h2>
+        <div id="underline"></div>
+        <div class="img-container">
+          <img class="brand-imgs" src="./Brand Logos/Diet Coke.png" />
+          <img class="brand-imgs" src="./Brand Logos/Costa Coffee.png" />
+          <img class="brand-imgs" src="./Brand Logos/Fresca.png" />
+          <img class="brand-imgs" src="./Brand Logos/Coca Cola.png" />
+          <img class="brand-imgs" src="./Brand Logos/Powerade.png" />
+          <img class="brand-imgs" src="./Brand Logos/Fanta.png" />
+          <img class="brand-imgs" src="./Brand Logos/Sprite.png" />
+        </div>
+      </section>
+
+      <section class="pages" id="page5">
+        <div class="swiper mySwiper" class="parallax-bg" data-swiper-parallax>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                data-swiper-parallax="-100"
+                data-swiper-parallax-duration="800"
+                data-swiper-parallax-opacity="0"
+                data-swiper-parallax-scale="0.7"
+                auto
+                src="./Slider Images/1.jpeg"
+              />
+              <div
+                class="subtitle"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                Always Innovative
+              </div>
+              <div
+                class="text-X"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                <p>
+                  From marketing to product development, we are relentlessly
+                  pursuing innivation that fuels and boldy explores the
+                  possitbilities of tommoro w's great brands. <br />
+                  <br />
+                  Innovation powers The Coca‑Cola Company’s approach to bring to
+                  market more of the great-tasting drinks people want in smart,
+                  responsible ways that positively impact our business,
+                  communities and planet.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-swiper-parallax="-100"
+                data-swiper-parallax-duration="800"
+                data-swiper-parallax-opacity="0"
+                data-swiper-parallax-scale="0.7"
+                src="./Slider Images/2.jpeg"
+              />
+              <div
+                class="subtitle"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                Water Leadership
+              </div>
+              <div
+                class="text-X"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                <p>
+                  We have replenished more than 100% of the water used in our
+                  finished beverages every year since 2015. <br />
+                  <br />
+                  We have a responsibility to accelerate our efforts to help
+                  address water stress, protect local water resources and help
+                  build community climate resilience - communities' ability to
+                  adapt to these changing conditions.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-swiper-parallax="-100"
+                data-swiper-parallax-duration="800"
+                data-swiper-parallax-opacity="0"
+                data-swiper-parallax-scale="0.7"
+                src="./Slider Images/3.jpeg"
+              />
+              <div
+                class="subtitle"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                Refreshingly Local
+              </div>
+              <div
+                class="text-X"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                <p>
+                  The Coca-cola system contributes to the local economy,
+                  supporting value through our network of suppliers,
+                  distributors, wholeshares and retailers. <br />
+                  <br />
+                  We build loved brands that bring joy to our consumers with
+                  beverage choices in grocery stores, restaurants, amusement
+                  parks, and more. The Coca-Cola system contributes to the U.S.
+                  economy
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-swiper-parallax="-100"
+                data-swiper-parallax-duration="800"
+                data-swiper-parallax-opacity="0"
+                data-swiper-parallax-scale="0.7"
+                src="./Slider Images/4.jpeg"
+              />
+              <div
+                class="subtitle"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                Diversity and Equity
+              </div>
+              <div
+                class="text-X"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                <p>
+                  We are commited to fostering an environment where inclusion
+                  and a sense of belonging are at the forefront. <br />
+                  <br />
+                  Our aspiration is not only to mirror the diversity of the
+                  communities where we operate and leverage the remarkable
+                  diversity of people across the world to achieve our purpose of
+                  refreshing the world and making a difference.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-swiper-parallax="-100"
+                data-swiper-parallax-duration="800"
+                data-swiper-parallax-opacity="0"
+                data-swiper-parallax-scale="0.7"
+                src="./Slider Images/5.jpeg"
+              />
+              <div
+                class="subtitle"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                Zero Waste
+              </div>
+              <div
+                class="text-X"
+                data-swiper-parallax="-1000"
+                data-swiper-parallax-opacity="0"
+              >
+                <p>
+                  We seek to drive a circular economy for our packaging because
+                  this helps to reduce waste and carbon emission. <br />
+                  <br />
+                  Our sustainable packaging strategy aims to create systemic
+                  change through a circular economy for our packaging - from how
+                  bottles and cans are designed and manufactured to how they’re
+                  recycled and reused.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+        <div class="arrow-next"></div>
+        <div class="arrow-back"></div>
+      </section>
+
+      <section class="pages" id="page6">
+        <h2 id="newsh2">Featured News.</h2>
+        <div id="underline"></div>
+        <div class="news-container">
+          <div class="news-hover">
+            <h2>Jack & Daniels and Coca‑Cola RTD Launches in US.</h2>
+            <p>
+              Jack Daniel’s & Coca‑Cola joins a portfolio of flavored alcohol
+              beverages that uses company brands, including Schweppes Pre-Mixed
+              Cocktails, currently available in Brazil, and the new Spiked
+              Lemonade and Fresca Mixed in the United States.
+            </p>
+            <button class="content-btn">Show More.</button>
+            <img src="./News Images/1.jpg" />
+          </div>
+          <div class="news-hover">
+            <h2>Our 2030 Water Strategy Key Goals.</h2>
+            <p>
+              The company is focused on good water stewardship, starting within
+              its own four walls, and extending outside The company also works
+              to preserve nature, biodiversity and promote advanced water
+              management practices.
+            </p>
+            <button class="content-btn">Show More.</button>
+            <img src="./News Images/2.jpg" />
+          </div>
+          <div class="news-hover">
+            <h2>
+              Dasani And Sprite Boost Sustainability Packaging Credentials.
+            </h2>
+            <p>
+              The shift supports both DASANI’s pledge to remove the equivalent
+              of 2 billion plastic bottles from production by 2027 .The goal is
+              to use at least 50% recycled material in its bottles and cans by
+              2030.
+            </p>
+            <button class="content-btn">Show More.</button>
+            <img src="./News Images/3.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="pages" id="footer">
+        <div id="heading">
+          <img id="brand-img" src="./Icons/Footer Coca Cola White.svg" />
+          <button id="location" class="content-btn">
+            <img src="./Icons/Footer Location.svg" />
+            <h2>India | English</h2>
+          </button>
+        </div>
+        <div id="foot-content">
+          <div class="tabs" id="tab1">
+            <ul>
+              <span class="ul-text"> ABOUT US</span>
+              <li data-text="Our Company"><span>Our Company</span></li>
+              <li data-text="Media Center"><span>Media Center</span></li>
+              <li data-text="History"><span>History</span></li>
+              <li data-text="Careers"><span>Careers</span></li>
+              <li data-text="Leadership"><span>Leadership</span></li>
+            </ul>
+          </div>
+          <div id="bar"></div>
+          <div class="tabs" id="tab2">
+            <ul>
+              <span class="ul-text">NEED HELP?</span>
+              <li data-text="FAQ"><span>FAQ</span></li>
+              <li data-text="Sitemap"><span>Sitemap</span></li>
+              <li data-text="Contact Us"><span>Contact Us</span></li>
+            </ul>
+          </div>
+          <div id="bar"></div>
+          <div class="tabs" id="tab3">
+            <ul>
+              <span class="ul-text">Terms</span>
+              <li data-text="Terms of Use"><span>Terms of Use</span></li>
+              <li data-text="Privacy Policy"><span>Privacy Policy</span></li>
+              <li data-text="Financial & Policy Documents">
+                <span>Financial & Policy Documents</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="links-terms">
+          <div id="links">
+            <button class="links-btns">Twitter</button>
+            <button class="links-btns">Instagram</button>
+            <button class="links-btns">Facebook</button>
+            <button class="links-btns">Youtube</button>
+          </div>
+          <h3>© 2024 The Coca‑Cola Company. All rights reserved.</h3>
+        </div>
+      </section>
+    </main>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
